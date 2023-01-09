@@ -21,7 +21,12 @@ function go(event) {
     i--
   }
 
+  if (output.includes('undefined') === true) {
+    element.innerHTML = output.replace('undefined', '')
+  }
+  else {
     element.innerHTML = output
+  }
 //  console.log(element.innerHTML)
 /*  if (count === 0) {
     count++
