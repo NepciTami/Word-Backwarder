@@ -14,27 +14,20 @@ function go(event) {
   let i = letters.length
 //  letters.push(input.substring(letters.length))
   console.log(letters)
-  let output
-  letters.forEach(letter => {
-    if (i >= 0) {
-      letter = letters[i]
-      output = output + letter
-      i--
-    }
-  })
+  let output = ''
+  while(i >=0) {
+    letter = letters[i]
+    output = output + letter
+    i--
+  }
 
-  if (output.includes('undefined') === true) {
-    element.innerHTML = output.replace('undefined', '')
-  }
-  else {
     element.innerHTML = output
-  }
 //  console.log(element.innerHTML)
-  if (count === 0) {
+/*  if (count === 0) {
     count++
     start = input
   }
   if (count === 1) {
     count--
-  }
+  }  */
 }
